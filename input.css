@@ -14,11 +14,23 @@
     height: 25px;
     
 }
-.b:hover{
+.b:hover {
     background-color: rgba(240, 248, 255, 0);
     color:#f1d1b5;
     font-weight: 600;
     border: 2px solid #f1d1b5;
+}
+.f{
+  background-color: rgba(240, 248, 255, 0);
+  font-weight: 600;
+  color: white;
+  border: 2px solid #305F72;
+}
+.f:hover{
+  background-color:#305F72;
+  color:white;
+  font-weight: 600;
+  
 }
 /* Hamburger Menu */
 .hamburger {

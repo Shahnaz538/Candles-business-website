@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playball&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-
-   
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+     
 </head>
 
 <body>
@@ -54,13 +55,13 @@
     </nav>     
     <div class="main-content">
         <div class="flex lg:flex-row xl:flex-row md:flex-row sm:flex-col xs:flex-col">
-            <img src="landing page.jpg" alt=""  class="-mt-16 opacity-80 xl:w-[800px] lg:w-[700px] md:w-[700px] sm:w-[640px] xs:w-[320px]">
-            <img src="landing page2.jpg" alt="" class="ml-44 mt-20 opacity-80 xs:" style="width:345px; height:264px;">
+            <img src="landing page.jpg" alt=""  class="-mt-16 opacity-80 xl:w-[800px] lg:w-[700px] md:w-[700px] sm:w-[640px] xs:w-[320px] " data-aos="flip-left" data-aos-duration="2000" >
+            <img src="landing page2.jpg" alt="" class="ml-44 mt-20 opacity-80" style="width:345px; height:264px;" data-aos="flip-right" data-aos-duration="2000" >
 
             <div class="float-left z-20 -ml-[1000px] text-[#312720] mt-32" style="font-family: 'Ubuntu', sans-serif;">
-                <h2 class="font-[400] text-[30px] text-[#305F72]" style="font-family: 'Dancing Script', cursive;">Candles for every occasion</h2>
-                <h1 class="font-[700] text-[50px] ">DISCOVER YOUR SIGNATURE SCENT</h1>
-                <button class="w-28 h-8 mx-auto bg-[#f1d1b5] text-white b font-semibold c">View More</button>
+                <h2 class="font-[400] text-[30px] text-[#305F72] wow animate__animated animate__fadeInUpBig animate__slow animate__delay-2s" style="font-family: 'Dancing Script', cursive;">Candles for every occasion</h2>
+                <h1 class="font-[700] text-[50px] wow animate__animated animate__fadeInUpBig animate__delay-3s animate__slow">DISCOVER YOUR SIGNATURE SCENT</h1>
+                <button class="w-28 h-8 mx-auto bg-[#f1d1b5] text-white b font-semibold c wow animate__animated animate__fadeInUpBig animate__delay-4s animate__slow">View More</button>
             </div>
         </div>
     </div>
@@ -74,45 +75,215 @@
         <a href="#" target="_blank">
             <img src="pinterest.png" alt="pinterest" class="h-5 mb-10 d" style="position: fixed; bottom: 30px; right:50px ">
         </a>
-        <a href="index.html" target="_blank">
+        <a href="index.html" target="_top">
             <img src="back-to-top .png" alt="pinterest" class="h-10 mb-19" style="position: fixed; bottom: 40px; left:50px;">
         </a>
     </div>
-    <div class="section-1 flex justify-center flex-col mx-auto">
+
+
+    <div id="section-1" class="section-1 flex justify-center flex-col mx-auto">
         <h1 class="font-[400] text-[50px] text-[#305F72] mx-auto mt-20" style="font-family: 'Ubuntu', sans-serif;">Shop us now</h1>
         <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto w-[70%] text-xl my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quam sit tempore assumenda eos molestiae ut hic molestias cum. Minima corrupti minus delectus! Ipsa officia eaque vel autem, atque qui?sectetur adipisicing elit. Fugit quam sit tempore assumenda eos molestiae ut hic molestias cum. Minima corrupti minus delectus! Ipsa officia eaque vel autem, atque qui?</p>
         <button class="w-28 h-8 mx-auto bg-[#f1d1b5] text-white b font-semibold">View More</button>
     </div>
+
     <div id="section-2">
-        <div class="mx-auto w-[850px] m-10">
-            <img src="sec-2.jpg" alt="">
+        <div class="mx-auto w-[850px] m-10 " data-aos="fade-in">
+            <img src="sec-2.jpg" alt="" >
         </div>
-            <img src="sec-2-overlay.jpg" alt="" class="w-[400px] h-[500px] z-10 position-absolute -mt-96 mx-auto">
+            <img src="sec-2-overlay.jpg" alt="" class="w-[400px] h-[500px] z-10 position-absolute -mt-96 mx-auto wow animate__animated animate__rollIn animate__slower"">
     </div>
-    <div id="section-3">
-        <div class="w-[100vw] h-[500px] bg-[#f1d1b585]  my-10">
-            <img src="sec-3.jpg" alt="" class="w-[400px] h-[500px] ">
+
+    <div class="w-[100vw] md:h-[1400px] lg:h-[1400px] xl:h-[1400px] sm:h-[2500px] xs:h-[2500px] bg-[#305f7232]  mt-5 flex  flex-col mx-auto">
+        <img src="candles.png" alt="" class="h-16 w-20 mx-auto mt-5 opacity-40">
+        <h2 class="font-[400] text-[40px] text-[#F18C8E] mx-auto -mt-16 z-20" style="font-family: 'Dancing Script', cursive;">new collection</h2>
+        <h1 class="font-[400] text-[50px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">Recommended for you</h1>
+        <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[800px] xs:h-[800px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row">
+        
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 ml-2">
+                <!-- <img src="a.webp" alt="" class="w-[400px] h-[450px]"> -->
+                <h2 class="font-[400] text-[40px] text-[#F18C8E] mx-auto -mt-16 z-20" style="font-family: 'Dancing Script', cursive;">Most Popular</h2>
+            </div>
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 ">
+                <img src="a.webp" alt="" class="w-[400px] h-[450px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2">
+            </div>
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 ">
+                <img src="a.webp" alt="" class="w-[400px] h-[450px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2">
+            </div>
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 mr-2">
+                <img src="a.webp" alt="" class="w-[400px] h-[450px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2">
+            </div>
+           
+     
+        </div >
+        <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[800px] xs:h-[800px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row">
+        
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 ml-2">
+                <img src="a.webp" alt="" class="w-[400px] h-[450px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2">
+            </div>
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 ">
+                <img src="a.webp" alt="" class="w-[400px] h-[450px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2">
+            </div>
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 ">
+                <img src="a.webp" alt="" class="w-[400px] h-[450px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2">
+            </div>
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 mr-2">
+                <!-- <img src="a.webp" alt="" class="w-[400px] h-[450px]"> -->
+            </div>
+           
+     
+        </div >
+    </div>
+     <!--CTA section-->
+     <section class="bg-[#307249]" class="section-4">
+        <div class="container flex flex-col items-center justify-between px-2 py-1 mx-auto mt-10  md:py-0.5  md:flex-row "></div>
+    </section>
+    <section id="cta" class="bg-slate-700" style="background-image: url('CTA.jpg');">
+        <div class="container flex flex-col items-center justify-between
+        px-6 py-24 mx-auto  mb-12 md:mb-12 md:flex-row md:space-y-0">
+      
+        <h1 class="text-4xl mb-4 font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left" style="font-family: 'Ubuntu', sans-serif;">
+            Wide variety of scented candles from the world’s top candle manufacturers.
+        </h1>
+        <div>
+            <a href="Welcome.html" class="w-[100px] h-9 block  f font-semibold" style="padding-left: 3px ; padding-top: 5px;">Join us now</a>
         </div>
+        </div>  
+    </section>
+    <div id="section-5" class=" flex  justify-between lg:h-96 xl:h-96 md:h-96  mt-16 sm:h-[800px] xs:h-[800px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row mx-auto">
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-8 ">
+                <img src="return-box.png" alt="" class="w-[80px] h-[80px] ml-14 xs:mx-auto sm:mx-auto">
+                <h1  class="font-[400] text-[20px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">Easy Return</h1>
+                <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto text-[14px] my-2">Shop stress-free with our easy return policy</p>
+            </div>
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-20">
+                <img src="medal.png" alt="" class="w-[80px] h-[80px] ml-14 xs:mx-auto sm:mx-auto">
+                <h1 class="font-[400] text-[20px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">Best Quality</h1>
+                <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto text-[14px] my-2">our premium selection of best quality products</p>
+            </div>
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-20 ">
+                <img src="fast.png" alt="" class="w-[80px] h-[80px] ml-14 xs:mx-auto sm:mx-auto">
+                <h1 class="font-[400] text-[20px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">Fast Delivery</h1>
+                <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto text-[14px] my-2">Get your order in a flash! </p>
+            </div>
+            <div class="Contacts xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-20 ">
+                <img src="support.png" alt="" class="w-[80px] h-[80px] ml-14 xs:mx-auto sm:mx-auto">
+                <h1 class="font-[400] text-[20px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">All Day Support</h1>
+                <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto text-[14px] my-2">Count on us for support around the clock</p>
+            </div>
     </div>
+            
+   
+
+    <!-- <div id="section-3">
+        <div class="w-[100vw] h-[700px] bg-[#305f7232]  mt-5 flex  flex-col mx-auto">
+            <img src="candles.png" alt="" class="h-16 w-20 mx-auto mt-5 opacity-40">
+            <h2 class="font-[400] text-[40px] text-[#F18C8E] mx-auto -mt-16 z-20" style="font-family: 'Dancing Script', cursive;">new collection</h2>
+            <h1 class="font-[400] text-[50px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">Recommended for you</h1>
+            <div class="xl:w-[50%] md:w-[50%] lg:w-[50%] sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row flex-row ">
+                <img src="3.jpg" alt="" class="w-[450px] h-[500px] ml-10">
+                <div>
+                    <img src="sec 3 .jpg" alt="">
+                        <img src="sec3.jpg" alt="">
+                </div>
+                        
+                
+            
+            </div>
+        </div>
+    </div> -->
    
     <div class="section-2">
         <h1>Shop us now</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quam sit tempore assumenda eos molestiae ut hic molestias cum. Minima corrupti minus delectus! Ipsa officia eaque vel autem, atque qui?</p>
-        <video src="pexels-vlada-karpovich-6754306 (2160p).mp4" muted loop autoplay class="w-[800px] h-[500px] float-right"></video>
-        <img src="young-woman-preparing-her-bath-time.jpg" alt="">
+        <!-- <video src="pexels-vlada-karpovich-6754306 (2160p).mp4" muted loop autoplay class="w-[800px] h-[500px] float-right"></video>
+        <img src="young-woman-preparing-her-bath-time.jpg" alt=""> -->
     </div>
-<script>
-    const btn=document.getElementById ('menu-btn')
-const nav=document.getElementById('menu')
 
-btn.addEventListener('click',() => {
-    btn.classList.toggle('open')
-    nav.classList.toggle('flex')
+
+
+    <div id="footer-section" data-aos="flip-left">
+        <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[1000px] xs:h-[900px] bg-[#f0b7a423] mt-10 flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row" style="position:relative; bottom:0; left:0;">
+            <div class="xl:w-[40%] md:w-[40%] lg:w-[40%] sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row flex-row ">
+                <img src="logo.png" alt="" class="w-72 h-72  sm:w-96 sm:h-96 xs:w-96 xs:h-96  xs:ml-16 sm:ml-16">
+                <!-- <span class="w-20 h-[1px] bg-slate-300 block -mb-16"></span> -->
+                <div class="social-media-links md:-mt-24 lg:-mt-24 xl:-mt-24 xs:mt-5 sm:mt-5">
+                    <p class="font-[700] text-[32px] text-[#305F72] ml-14 xs:ml-40 sm:ml-40" style="font-family: 'Ubuntu', sans-serif;">Get Social </p>
+                    <div class=" flex flex-row w-[40%] justify-between ml-5 xs:ml-32  sm:ml-32" style="position: relative;">
+                        <a href="#" target="_blank">
+                            <img src="facebook-app-symbol.png" alt="facebook" class="h-4 mt-3 mx-10 ">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="instagram.png" alt="instagram" class="h-4 mt-3 mr-10 " >
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="pinterest.png" alt="pinterest" class="h-4 mt-3 mr-10 ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="Contacts xl:w-[40%] lg:w-[40%] md:w-[40%]  flex flex-col mt-20">
+                <h1 class="font-[700] text-[26px] text-[#305F72] my-3 xs:ml-40 sm:ml-40" style="font-family: 'Ubuntu', sans-serif;">Contacts </h1>
+                <div class="flex flex-row">
+                    <img src="pin.png" alt="location" class="h-4 my-2 mr-4 xs:ml-32  sm:ml-32">
+                    <p>523 Avs 5th Floor Mountain View,PK</p>
+                </div>
+                <div class="flex flex-row">
+                    <img src="phone-receiver-silhouette.png" alt="phone" class="h-4 my-2 mr-4 xs:ml-32  sm:ml-32">
+                    <p>+92 313 2928759</p>
+                </div>
+                <div class="flex flex-row ">
+                    <img src="mail.png" alt="mail" class="h-4 my-2 mr-4 xs:ml-32  sm:ml-32">
+                    <p>info@LigtupAroma.org</p>
+                </div>
+               
+                
+            </div>
+            <div class="Contacts xl:w-[40%] lg:w-[40%] md:w-[40%] flex flex-col mt-20">
+                <h1 class="font-[700] text-[26px] text-[#305F72] m-1 xs:mx-auto sm:mx-auto" style="font-family: 'Ubuntu', sans-serif;">Services</h1>
+                <p class="my-1 xs:mx-auto sm:mx-auto">Exclusive offers</p>
+                <p class="my-1 xs:mx-auto sm:mx-auto">Store location</p>
+                <p class="my-1 xs:mx-auto sm:mx-auto">Help</p>
+                <p class="my-1 xs:mx-auto sm:mx-auto">Gifts</p>   
+                
+            </div>
+     
+        </div >
+        <div class="footer w-[100vw] h-24 xs:h-32 sm:h-32 bg-[#f18c8e83] md:flex-row lg:flex-row xl:flex-row xs:flex-col sm:flex-col flex" style="position:relative; bottom:0; left:0;">
+            
+            <p class="text-[#305F72]   text-[14px] ml-20 pt-10 xs:mx-auto sm:mx-auto"  style="font-family: 'Open Sans', sans-serif;">© 2023 LigtupAroma.  All rights reserved.</p>
+            <p class="text-[#305F72]   text-[14px] lg:mr-32  md:mr-32  xl:mr-32  md:mt-12 lg:md:mt-12 xl:md:mt-12 float-right xs:mx-auto sm:mx-auto" style="font-family: 'Open Sans', sans-serif;">Privacy</p>
+            <p class="text-[#305F72]  text-[14px] mr-4  float-right md:mt-12 lg:md:mt-12 xl:md:mt-12 xs:mx-auto sm:mx-auto" style="font-family: 'Open Sans', sans-serif;">Terms of use</p>
+        
+        </div>
+    </div>
+    
+<!--     
+    <script>
+        
+        // new WOW().init();
+        
+        const btn=document.getElementById ('menu-btn')
+        const nav=document.getElementById('menu')
+        
+        btn.addEventListener('click',() => {
+            btn.classList.toggle('open')
+            nav.classList.toggle('flex')
     nav.classList.toggle('hidden')
     
 });
 
 
+
 </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:300
+    });
+  </script> -->
 </body>
 </html>
+
+
+
