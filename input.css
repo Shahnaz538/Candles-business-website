@@ -24,10 +24,10 @@
   background-color: rgba(240, 248, 255, 0);
   font-weight: 600;
   color: white;
-  border: 2px solid #305F72;
+  border: 2px solid #307249;
 }
 .f:hover{
-  background-color:#305F72;
+  background-color:#307249;
   color:white;
   font-weight: 600;
   
@@ -77,4 +77,11 @@
   
   .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+  .s-enlarge:hover{
+    height: 65px;
+    width: 65px;
+  }
+  .shadow:hover{
+    box-shadow:   0 -7px 25px 0 rgba(0, 0, 0, 0.295), 0 13px 16px -1px rgba(0, 0, 0, 0.245);
   }
