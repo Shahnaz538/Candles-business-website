@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LigtupAroma | Candle Shop</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playball&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+</head>
+
+<body>
+    <nav class="lg:flex xl:flex md:flex flex-row md:sticky md:z-50 md:top-0 md:left-0 md:bg-white md:shadow-md md:h-32">
+    <!--Mobile menu-->
+        <div class="relative container inline-block md:hidden lg:hidden xl:hidden sm:block xs:block">
+            <button id="menu-btn" class=" hamburger m-10 focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <div class="md:hidden lg:hidden xl:hidden sm:bloc xs:block">
+            <div id="menu" class="z-40  absolute flex-col items-center hidden self-end space-y-6 py-8 mt-10 text-white ml-32 bg-[#f1d1b593] sm:w-[350px] sm:self-center mx-auto drop-shadow-md "style="font-family: 'Open Sans', sans-serif;">
+                <a href="Shop.html">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">Brands</a>
+                <a href="#">Contact us</a>  
+            </div>
+        </div>
+        <!--Large screen menu--> 
+        <div class="navitems m-5 text-[#464A4E] mt-10 position-fixed xs:hidden sm:hidden md:block lg:block xl:block" style="font-family: 'Open Sans', sans-serif;">
+            <a href="index.html" class="mr-10 ml-10 hover:text-[#D5AE61] active">Home</a>
+            <a href="Shop.html" class="mr-10 hover:text-[#D5AE61] active">Shop</a>
+            <a href="#" class="mr-10 hover:text-[#D5AE61] active">Blog</a>
+            <a href="#" class="mr-10 hover:text-[#D5AE61] active">Brands</a>
+            <a href="#" class="mr-10 hover:text-[#D5AE61] active">Contact us</a>
+        </div>
+        <div class="logo md:mx-auto sm:ml-32 xs:ml-32">
+            <img src="logo.png" alt="" class="w-60 h-60 lg:-mt-14 xl:-mt-14 md:-mt-14 sm:-mt-24 xs:-mt-24 sm:ml-42 xs:ml-10">
+        </div>
+        <div class="xs:hidden sm:hidden md:hidden lg:block xl:block">
+            <div class="right-nav-items  m-5 mt-10 flex flex-row  opacity-50 ">
+                <img src="user.png" alt="" class="w-6 h-6 ml-36 mr-10 a"> 
+                <img src="shopping-cart.png" alt="" class="w-6 h-6 mr-10 a">
+                <img src="bell.png" alt="" class="w-6 h-6 a">                              
+            </div>
+        </div>
+    </nav>  
+    <div class="categories section-3 w-[100vw] md:h-[900px] lg:h-[900px] xl:h-[900px] sm:h-[3500px] xs:h-[3500px] mb-5  mt-10 flex  flex-col mx-auto ml-5 mr-5" style="font-family: 'Open Sans', sans-serif;">
+        <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[800px] xs:h-[800px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40 xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1" data-aos="slide-left">
+                <div class="group relative" >
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
+                        <img src="c1.webp" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 ">
+                        <h1 class="text-center">Wood Wick Candle</h1>
+                        <p class="text-center"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+                            <a href="#" class="text-[#305F72] text-center">
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40 xl:ml-0 lg:ml-0 md:ml-0  flex flex-col mx-1 " data-aos="slide-left">
+                <div class="group relative">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
+                        <img src="c2.jpg" alt="" class="w-[400px] h-[350px]  sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                        <h1 class="text-center">Soy Candle</h1>
+                        <p class="text-center"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+                            <a href="#" class="text-[#305F72] text-center">
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40 xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-right">
+                <div class="group relative">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
+                        <img src="c3.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                        <h1 class="text-center">Sparklers</h1>
+                        <p class="text-center"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+                            <a href="#" class="text-[#305F72] text-center">
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40  xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-right">
+                <div class="group relative">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
+                        <img src="Votive.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                        <h1 class="text-center">Floating Candle</h1>
+                        <p class="text-center"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+                            <a href="#" class="text-[#305F72] text-center">
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>     
+        </div>
+        <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[1200px] mt-10 xs:h-[1200px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40  xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 md:mt-1 lg:mt-1 xs:mt-[800px] sm:mt-[800px]" data-aos="slide-left" >
+                <div class="group group group relative">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
+                        <img src="c5.webp" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                        <h1 class="text-center">Votive Candle</h1>
+                        <p class="text-center"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+                            <a href="#" class="text-[#305F72] text-center">
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40  xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-left">
+                <div class="group relative">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
+                        <img src="c6.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                        <h1 class="text-center">Tealight</h1>
+                        <p class="text-center"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+                            <a href="#" class="text-[#305F72] text-center">
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40  xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-right">
+                <div class="group relative">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
+                        <img src="c7.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                        <h1 class="text-center">Scented Candle</h1>
+                        <p class="text-center"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+                            <a href="#" class="text-[#305F72] text-center">
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40 xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-right">
+                <div class="group relative">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
+                        <img src="c8.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                        <h1 class="text-center">Pillar Candles</h1>
+                        <p class="text-center"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+                            <a href="#" class="text-[#305F72] text-center">
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>   
+            </div>     
+        </div >
+    </div>
+       
+    <div id="section-8 footer-section" data-aos="fade" class="sm:w-[900px] xs:w-[900px] lg:w-auto xl:w-auto md:w-auto">
+        <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[1000px] xs:h-[900px] bg-[#f0b7a423] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row" style="position:relative; bottom:0; left:0;">
+            <div class="xl:w-[40%] md:w-[40%] lg:w-[40%] sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row flex-row xs:mx-auto sm:mx-auto">
+                <img src="logo.png" alt="" class="w-64 h-64  sm:w-96 sm:h-96 xs:w-96 xs:h-96  xs:ml-16 sm:ml-16">
+                <!-- <span class="w-20 h-[1px] bg-slate-300 block -mb-16"></span> -->
+                <div class="social-media-links md:-mt-24 lg:-mt-24 xl:-mt-24 xs:mt-5 sm:mt-5 xs:mx-auto sm:mx-auto">
+                    <p class="font-[700] text-[32px] text-[#305F72] ml-14 xs:ml-40 sm:ml-40 " style="font-family: 'Ubuntu', sans-serif;">Get Social </p>
+                    <div class=" flex flex-row w-[40%] justify-between ml-5 xs:ml-32  sm:ml-32" style="position: relative;">
+                        <a href="#" target="_blank">
+                            <img src="facebook-app-symbol.png" alt="facebook" class="h-4 mt-3 mx-10 ">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="instagram.png" alt="instagram" class="h-4 mt-3 mr-10 " >
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="pinterest.png" alt="pinterest" class="h-4 mt-3 mr-10 ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="xl:w-[40%] lg:w-[40%] md:w-[40%]  flex flex-col mt-20 xs:mx-auto sm:mx-auto ">
+                <h1 class="font-[700] text-[26px] text-[#305F72] my-3 xs:ml-40 sm:ml-40 " style="font-family: 'Ubuntu', sans-serif;">Contacts </h1>
+                <div class="flex flex-row">
+                    <img src="pin.png" alt="location" class="h-4 my-2 mr-4 xs:ml-32  sm:ml-32">
+                    <p>523 Avs 5th Floor Mountain View,PK</p>
+                </div>
+                <div class="flex flex-row">
+                    <img src="phone-receiver-silhouette.png" alt="phone" class="h-4 my-2 mr-4 xs:ml-32  sm:ml-32">
+                    <p>+92 313 2928759</p>
+                </div>
+                <div class="flex flex-row ">
+                    <img src="mail.png" alt="mail" class="h-4 my-2 mr-4 xs:ml-32  sm:ml-32">
+                    <p>info@LigtupAroma.org</p>
+                </div>
+               
+                
+            </div>
+            <div class="xl:w-[40%] lg:w-[40%] md:w-[40%] flex flex-col mt-20">
+                <h1 class="font-[700] text-[26px] text-[#305F72] m-1 xs:mx-auto sm:mx-auto" style="font-family: 'Ubuntu', sans-serif;">Services</h1>
+                <p class="my-1 xs:mx-auto sm:mx-auto">Exclusive offers</p>
+                <p class="my-1 xs:mx-auto sm:mx-auto">Store location</p>
+                <p class="my-1 xs:mx-auto sm:mx-auto">Help</p>
+                <p class="my-1 xs:mx-auto sm:mx-auto">Gifts</p>   
+                
+            </div>
+     
+        </div >
+       
+        <div class="footer sm:w-[900px] xs:w-[900px] lg:w-auto xl:w-auto md:w-auto h-24 xs:h-32 sm:h-32 bg-[#f18c8e83] md:flex-row lg:flex-row xl:flex-row xs:flex-col sm:flex-col flex" style="position:relative; bottom:0; left:0;">
+            
+            <p class="text-[#305F72]   text-[14px] ml-20 pt-10 xs:mx-auto sm:mx-auto"  style="font-family: 'Open Sans', sans-serif;">© 2023 LigtupAroma.  All rights reserved.</p>
+            <p class="text-[#305F72]   text-[14px] lg:mr-32  md:mr-32  xl:mr-32  md:mt-12 lg:md:mt-12 xl:md:mt-12 float-right xs:mx-auto sm:mx-auto" style="font-family: 'Open Sans', sans-serif;">Privacy</p>
+            <p class="text-[#305F72]  text-[14px] mr-4  float-right md:mt-12 lg:md:mt-12 xl:md:mt-12 xs:mx-auto sm:mx-auto" style="font-family: 'Open Sans', sans-serif;">Terms of use</p>
+        
+        </div>
+    </div>
+    
+    
+    <!-- <script>
+        
+        // new WOW().init();
+        
+        const btn=document.getElementById ('menu-btn')
+        const nav=document.getElementById('menu')
+        
+        btn.addEventListener('click',() => {
+            btn.classList.toggle('open')
+            nav.classList.toggle('flex')
+    nav.classList.toggle('hidden')
+    
+});
+
+
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:300
+    });
+  </script> -->
+</body>
+</html>
