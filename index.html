@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playball&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-     
+
 </head>
 
-<body>
-    <nav class="lg:flex xl:flex md:flex flex-row">
-      <!--Mobile menu-->
+    <nav class="lg:flex xl:flex md:flex flex-row md:sticky md:z-50 md:top-0 md:left-0 md:bg-white md:h-32">
+    <!--Mobile menu-->
         <div class="relative container inline-block md:hidden lg:hidden xl:hidden sm:block xs:block">
             <button id="menu-btn" class=" hamburger m-10 focus:outline-none">
                 <span class="hamburger-top"></span>
@@ -28,34 +27,34 @@
         </div>
         <div class="md:hidden lg:hidden xl:hidden sm:bloc xs:block">
             <div id="menu" class="z-40  absolute flex-col items-center hidden self-end space-y-6 py-8 mt-10 text-white ml-32 bg-[#f1d1b593] sm:w-[350px] sm:self-center mx-auto drop-shadow-md "style="font-family: 'Open Sans', sans-serif;">
-                <a href="#">Shop</a>
+                <a href="Shop.html">Shop</a>
                 <a href="#">Blog</a>
                 <a href="#">Brands</a>
                 <a href="#">Contact us</a>  
             </div>
         </div>
-       <!--Large screen menu-->
+    <!--Large screen menu-->
         <div class="navitems m-5 text-[#305f72] mt-10 position-fixed xs:hidden sm:hidden md:block lg:block xl:block" style="font-family: 'Open Sans', sans-serif;">
-            <a href="#" class="mr-10 ml-10 text-[#f1d1b5] hover:text-[#305f72]">Home</a>
-            <a href="#" class="mr-10 hover:text-[#f1d1b5]">Shop</a>
-            <a href="#" class="mr-10 hover:text-[#f1d1b5]">Blog</a>
-            <a href="#" class="mr-10 hover:text-[#f1d1b5]">Brands</a>
-            <a href="#" class="mr-10 hover:text-[#f1d1b5]">Contact us</a>
+            <a href="#" class="mr-10 ml-10 hover:text-[#D5AE61] active">Home</a>
+            <a href="Shop.html" class="mr-10 hover:text-[#D5AE61] active">Shop</a>
+            <a href="#" class="mr-10 hover:text-[#D5AE61] active">Blog</a>
+            <a href="#" class="mr-10 hover:text-[#D5AE61] active">Brands</a>
+            <a href="#" class="mr-10 hover:text-[#D5AE61] active">Contact us</a>
         </div>
         <div class="logo md:mx-auto sm:ml-32 xs:ml-32">
-            <img src="logo.png" alt="" class="w-72 h-72 lg:-mt-16 xl:-mt-16 md:-mt-16 sm:-mt-24 xs:-mt-24 sm:ml-42 xs:ml-20">
+            <img src="logo.png" alt="" class="w-60 h-60 lg:-mt-14 xl:-mt-14 md:-mt-14 sm:-mt-24 xs:-mt-24 sm:ml-42 xs:ml-10">
         </div>
-      <div class="xs:hidden sm:hidden md:hidden lg:block xl:block">
-        <div class="right-nav-items  m-5 mt-10 flex flex-row  opacity-50 ">
-            <img src="user.png" alt="" class="w-6 h-6 ml-36 mr-10 a"> 
-            <img src="shopping-cart.png" alt="" class="w-6 h-6 mr-10 a">
-            <img src="bell.png" alt="" class="w-6 h-6 a">                              
+        <div class="xs:hidden sm:hidden md:hidden lg:block xl:block">
+            <div class="right-nav-items  m-5 mt-10 flex flex-row  opacity-50 ">
+                <img src="user.png" alt="" class="w-6 h-6 ml-36 mr-10 a"> 
+                <img src="shopping-bag.png" alt="" class="w-6 h-6 mr-10 a">
+                <img src="bell.png" alt="" class="w-6 h-6 a">                              
+            </div>
         </div>
-      </div>
     </nav>     
     <div class="main-content">
-        <div class="flex lg:flex-row xl:flex-row md:flex-row sm:flex-col xs:flex-col">
-            <img src="landing page.jpg" alt=""  class="-mt-16 opacity-80 xl:w-[800px] lg:w-[700px] md:w-[700px] sm:w-[640px] xs:w-[320px] " data-aos="zoom-out-up" data-aos-duration="2000" >
+        <div class="flex lg:flex-row xl:flex-row md:flex-row sm:flex-col xs:flex-col ">
+            <img src="landing page.jpg" alt=""  class=" opacity-80 xl:w-[800px] lg:w-[700px] md:w-[700px] sm:w-[640px] xs:w-[320px] mt-8" data-aos="zoom-out-up" data-aos-duration="2000" >
             <img src="p5.jpg" alt="" class="md:ml-32 lg:ml-32 xl:ml-32 mt-20 opacity-60 xs:w-[400px] sm:w-[400px] xs:ml-[450px] sm:ml-56" style="width:345px; height:264px;" data-aos="zoom-out-down" data-aos-duration="2000" >
 
             <div class="float-left z-40 md:-ml-[800px] lg:-ml-[800px] xl:-ml-[800px] text-[#312720] md:mt-32 lg:mt-32  xl:mt-32 xs:-mt-80 sm:-mt-80 sm:ml-5 xs:ml-5" style="font-family: 'Ubuntu', sans-serif;">
@@ -80,35 +79,99 @@
         </a>
     </div>
 
+<div class="mx-auto p-12">
+    <div class="grid md:grid-cols-11 sm:grid-cols-4 xs:grid-cols-4 gap-4 mb-2 xs:mt-10">
+        <div class="category-item" onclick="filterProducts('beeswaxcandle')">
+            <img src="c1_Thumbnail.jpeg" alt="Beeswaxcandle" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Bees Wax</p>
+        </div>
+        <div class="category-item" onclick="filterProducts('woodwick')">
+            <img src="Woodwick_c2.jpg" alt="woodwick" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Wood Wick</p>
+        </div>
+        <div class="category-item" onclick="filterProducts('soycandle')">
+            <img src="c3 thumnaill.jpeg" alt="soycandle" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Soy Candle</p>
+        </div>
+        <div class="category-item" onclick="filterProducts('Sparklers')">
+            <img src="c4 thumbnail.jpg" alt="Sparklers" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Sparkling Candle</p>
+        </div>
+        <div class="category-item" onclick="filterProducts('trickcandle')">
+            <img src="c6 thubnail.webp" alt="trickcandle" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Trick Candle</p>
+        </div>
+        <div class="category-item" onclick="filterProducts('GelCandle')">
+            <img src="c5 thumbnail.webp" alt="Gel Candle" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Gel Candle</p>
+        </div>
+        <div class="category-item" onclick="filterProducts('floatingCandle')">
+            <img src="c7 thumbnail.webp" alt="floatingCandle" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Floating Candle</p>
+        </div>
+        <div class="category-item" onclick="filterProducts('citronella')">
+            <img src="c8 thumbnail.webp" alt="citronella" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Citronella Candle</p>
+        </div>
+        <div class="category-item" onclick="filterProducts('ScentedCandle')">
+            <img src="c9 thubnail.webp" alt="ScentedCandle" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Scented Candle</p>
+        </div>
+        <div class="category-item" onclick="filterProducts('ContainerCandle')">
+            <img src="c10 thumbnail.webp" alt="Container Candle" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+            <p class="text-center font-semibold">Container Candle</p>
+        </div>
+        <div class="category-item" >
+            <button   class="col-span-2" onclick="showAllCategories()">
+                <img src="scented-candle.png" alt="All Categories" class="w-20 h-20 mb-2 mx-auto rounded-full i">
+                <p   class="text-center font-semibold">See All</p>
+            </button>
+        </div>
 
-    <div id="section-1" class="section-1 flex justify-center flex-col mx-auto">
-        <h1 class="font-[400] text-[50px] text-[#305F72] mx-auto mt-20" style="font-family: 'Ubuntu', sans-serif;">Shop us now</h1>
-        <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto w-[70%] text-xl my-10">
-            Elevate your ambiance with our exquisite candle collection. Indulge in the mesmerizing glow and enticing fragrances that only our handcrafted candles can provide. Whether you seek serenity, style, or a thoughtful gift, our carefully curated range offers the perfect choice. Explore the magic of candlelight with lightupAroma and transform any moment into a sensory journey.</p>
-        <button class="w-28 h-8 mx-auto bg-[#f1d1b5] text-white b font-semibold">View More</button>
     </div>
+</div>
+<div class="">
+    <a href="#" class="flex  justify-start">
+        <h2 class="font-[400] text-[20px] text-[#305F72] my-6 mx-4" style="font-family: 'Ubuntu', sans-serif;">Browse all categories</h2>
+    <span><img src="right.png" alt="" class="w-5 h-5" style="margin-top: 30px;"></span>
+    </a>
+</div>
+<div class="mx-auto p-12">
+    <!-- Product Listing Starts from here-->
+    <div id="product-list" class="grid grid-cols-1 gap-4 sm:grid-cols-1 lg:grid-cols-4 xl:grid-cols-5 md:grid-cols-3">
+        <!-- Product cards will be fetched -->
+    </div>
+</div>
+
+
+<div id="section-1" class="section-1 flex justify-center flex-col mx-auto">
+    <h1 class="font-[400] text-[50px] text-[#305F72] mx-auto mt-20" style="font-family:'Ubuntu', sans-serif">Shop us now</h1>
+    <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto w-[70%] text-xl my-10">
+        Elevate your ambiance with our exquisite candle collection. Indulge in the mesmerizing glow and enticing fragrances that only our handcrafted candles can provide. Whether you seek serenity, style, or a thoughtful gift, our carefully curated range offers the perfect choice. Explore the magic of candlelight with lightupAroma and transform any moment into a sensory journey.</p>
+    <button class="w-28 h-8 mx-auto bg-[#f1d1b5] text-white b font-semibold">View More</button>
+</div>
+
 
     <div id="section-2">
-        <div class="mx-auto w-[850px] m-10 " data-aos="zoom-out-up">
+        <div class="mx-auto md:w-[850px] m-10 w-[400px]" data-aos="zoom-out-up">
             <img src="sec-2.jpg" alt="" >
         </div>
-            <img src="sec-2-overlay.jpg" alt="" class="w-[400px] h-[500px] z-10 position-absolute -mt-96 lg:mx-auto xl:mx-auto md:mx-auto sm:ml-56 xs:ml-56 wow animate__animated animate__rollIn animate__slower"">
+            <img src="sec-2-overlay.jpg" alt="" class=" w-[200px] md:w-[400px] h-[250px] md:h-[500px] z-10 position-absolute -mt-96 lg:mx-auto xl:mx-auto md:mx-auto sm:ml-40 xs:ml-40 -xs:mt-2 wow animate__animated animate__rollIn animate__slower"">
     </div>
 
-    <div id="section-3" class="section-1 flex justify-center flex-col md:mx-auto lg:mx-auto xl:mx-auto sm:ml-24 xs:ml-24">
+    <div id="section-3" class="section-1 flex justify-center flex-col md:mx-auto lg:mx-auto xl:mx-auto sm:ml-24 xs:ml-24 my-14">
         <img src="candles.png" alt="" class="h-16 w-20 mx-auto mt-5 opacity-40">
-        <h2 class="font-[400] text-[40px] text-[#F0B7A4] mx-auto  -mt-16 z-20" style="font-family: 'Dancing Script', cursive;">Candle Assortments</h2>
-        <h1 class="font-[400] text-[50px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">Categories</h1>
+        <h2 class="font-[400] text-[40px] text-[#F0B7A4] mx-auto  -mt-16 z-20" style="font-family: 'Dancing Script', cursive;">New Arrivals</h2>
     </div>
-    <div class="categories section-3 w-[100vw] md:h-[900px] lg:h-[900px] xl:h-[900px] sm:h-[3500px] xs:h-[3500px] mb-5  mt-10 flex  flex-col mx-auto ml-5 mr-5" style="font-family: 'Open Sans', sans-serif;">
-        <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[800px] xs:h-[800px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row">
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40 xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1" data-aos="slide-left">
-                <div class="group relative" >
-                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
-                        <img src="c1.webp" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 ">
-                        <h1 class="text-center">Wood Wick Candle</h1>
-                        <p class="text-center"> Add to cart</p>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+    <div class="new-arrival section-3 " style="font-family: 'Open Sans', sans-serif;">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 md:grid-cols-4 my-5  mt-6">
+            <div class="ml-2 mr-[2px]" data-aos="slide-left">
+                <div class="group relative rounded-md" >
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2 rounded-md">
+                        <img src="new1.jpg" alt="" class="w-[700px] h-[300px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 rounded-md">
+                        <h1 class="text-center">IllumiFlame Wood Wick Candle</h1>
+                        <p class="text-center pb-2"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity rounded-md" style="box-shadow: 1px 12px 20px gray;">
                             <a href="#" class="text-[#305F72] text-center">
                                 <img src="eye.png" alt="" class="m-2 h-6 w-6">
                                 <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
@@ -117,13 +180,13 @@
                     </div>
                 </div>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40 xl:ml-0 lg:ml-0 md:ml-0  flex flex-col mx-1 " data-aos="slide-left">
-                <div class="group relative">
-                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
-                        <img src="c2.jpg" alt="" class="w-[400px] h-[350px]  sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
-                        <h1 class="text-center">Soy Candle</h1>
-                        <p class="text-center"> Add to cart</p>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+            <div class="mr-[2px]" data-aos="slide-left">
+                <div class="group relative rounded-md">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2 rounded-md">
+                        <img src="new2.jpeg" alt="" class="w-[700px] h-[300px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity rounded-md">
+                        <h1 class="text-center">Banfe Candle Scented Serenity</h1>
+                        <p class="text-center pb-2"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity rounded-md" style="box-shadow: 1px 12px 20px gray;">
                             <a href="#" class="text-[#305F72] text-center">
                                 <img src="eye.png" alt="" class="m-2 h-6 w-6">
                                 <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
@@ -132,13 +195,13 @@
                     </div>
                 </div>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40 xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-right">
-                <div class="group relative">
-                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
-                        <img src="c3.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
-                        <h1 class="text-center">Sparklers</h1>
-                        <p class="text-center"> Add to cart</p>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+            <div class="mr-[2px]" data-aos="slide-right">
+                <div class="group relative rounded-md">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2 rounded-md">
+                        <img src="new3.jpg" alt="" class="w-[700px] h-[300px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity rounded-md">
+                        <h1 class="text-center">Tranquil Twilight</h1>
+                        <p class="text-center pb-2"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity rounded-md "  style="box-shadow: 1px 12px 20px gray;">
                             <a href="#" class="text-[#305F72] text-center">
                                 <img src="eye.png" alt="" class="m-2 h-6 w-6">
                                 <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
@@ -147,45 +210,30 @@
                     </div>
                 </div>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40  xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-right">
-                <div class="group relative">
-                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
-                        <img src="c4-1.webp" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
-                        <h1 class="text-center">Floating Candle</h1>
-                        <p class="text-center"> Add to cart</p>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+            <div class="mr-2" data-aos="slide-right">
+                <div class="group relative rounded-md">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2 rounded-md">
+                        <img src="new4.jpeg" alt="" class="w-[700px] h-[300px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity rounded-md">
+                        <h1 class="text-center">EnchantiWick</h1>
+                        <p class="text-center pb-2"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-90 transition-opacity rounded-md" style="box-shadow: 1px 12px 20px gray;">
                             <a href="#" class="text-[#305F72] text-center">
-                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
-                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6 ">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>  
                             </a>
                         </div>
                     </div>
                 </div>  
             </div>     
         </div>
-        <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[1200px] mt-10 xs:h-[1200px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row">
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40  xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 md:mt-1 lg:mt-1 xs:mt-[800px] sm:mt-[800px]" data-aos="slide-left" >
-                <div class="group group group relative">
-                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
-                        <img src="c5.webp" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
-                        <h1 class="text-center">Votive Candle</h1>
-                        <p class="text-center"> Add to cart</p>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
-                            <a href="#" class="text-[#305F72] text-center">
-                                <img src="eye.png" alt="" class="m-2 h-6 w-6">
-                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40  xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-left">
-                <div class="group relative">
-                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
-                        <img src="c6.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
-                        <h1 class="text-center">Tealight</h1>
-                        <p class="text-center"> Add to cart</p>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 md:grid-cols-4 my-5 mb-20">
+            <div class="ml-2 mr-[2px]" data-aos="slide-left">
+                <div class="group relative rounded-md" >
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2 rounded-md">
+                        <img src="new5.jpeg" alt="" class="w-[700px] h-[300px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 rounded-md">
+                        <h1 class="text-center">Ocean Waves Scented Candlelight</h1>
+                        <p class="text-center pb-2"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity rounded-md" style="box-shadow: 1px 12px 20px gray;">
                             <a href="#" class="text-[#305F72] text-center">
                                 <img src="eye.png" alt="" class="m-2 h-6 w-6">
                                 <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
@@ -194,73 +242,80 @@
                     </div>
                 </div>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40  xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-right">
-                <div class="group relative">
-                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
-                        <img src="c7.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
-                        <h1 class="text-center">Scented Candle</h1>
-                        <p class="text-center"> Add to cart</p>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+            <div class="mr-[2px]" data-aos="slide-left">
+                <div class="group relative rounded-md">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2 rounded-md">
+                        <img src="new6.webp" alt="" class="w-[700px] h-[300px]  sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity rounded-md">
+                        <h1 class="text-center">Soy Candle</h1>
+                        <p class="text-center pb-2"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity rounded-md" style="box-shadow: 1px 12px 20px gray;">
                             <a href="#" class="text-[#305F72] text-center">
                                 <img src="eye.png" alt="" class="m-2 h-6 w-6">
                                 <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
                             </a>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] xs:w-[70%] sm:w-[70%] xs:justify-center sm:ml-40 xs:ml-40 xl:ml-0 lg:ml-0 md:ml-0 flex flex-col mx-1 " data-aos="slide-right">
-                <div class="group relative">
-                    <div class="group-hover:opacity-50 transition-opacity -mt-2">
-                        <img src="c8.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
-                        <h1 class="text-center">Pillar Candles</h1>
-                        <p class="text-center"> Add to cart</p>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity shadow">
+            <div class="mr-[2px]" data-aos="slide-right">
+                <div class="group relative rounded-md">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2 rounded-md">
+                        <img src="new7.jpeg" alt="" class="w-[700px] h-[300px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity rounded-md">
+                        <h1 class="text-center">Whispers of Lavender Dreams</h1>
+                        <p class="text-center pb-2"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity rounded-md "  style="box-shadow: 1px 12px 20px gray;">
                             <a href="#" class="text-[#305F72] text-center">
                                 <img src="eye.png" alt="" class="m-2 h-6 w-6">
                                 <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>
                             </a>
                         </div>
                     </div>
-                </div>   
+                </div>
+            </div>
+            <div class="mr-2" data-aos="slide-right">
+                <div class="group relative rounded-md">
+                    <div class="group-hover:opacity-50 transition-opacity -mt-2 rounded-md">
+                        <img src="new8.jpg" alt="" class="w-[700px] h-[300px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity rounded-md">
+                        <h1 class="text-center">Mystic Bergamot Twilight Essence</h1>
+                        <p class="text-center pb-2"> Add to cart</p>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-90 transition-opacity rounded-md" style="box-shadow: 1px 12px 20px gray;">
+                            <a href="#" class="text-[#305F72] text-center">
+                                <img src="eye.png" alt="" class="m-2 h-6 w-6 ">
+                                <a href="#"><img src="heart.png" alt="" class="m-2 h-5 w-5"></a>  
+                            </a>
+                        </div>
+                    </div>
+                </div>  
             </div>     
-        </div >
+        </div>
     </div>
 
-    <div id="section-4" class="section-1 flex justify-center flex-col md:mx-auto lg:mx-auto xl:mx-auto sm:ml-28 xs:ml-28 -mt-28">
-        <img src="candles.png" alt="" class="h-16 w-20 mx-auto mt-5 opacity-40">
-        <div class="flex flex-row  mx-auto -mt-16 z-20 ">
-            <a class="font-[400] text-[40px] text-[#F0B7A4] cursor-pointer" style="font-family: 'Dancing Script', cursive;">View more Categories</a>
-            <img src="right.png" alt="" class="h-8 w-8 mt-4 ml-2">
-        </div>
-            
-        
-    </div>
+    
     <div class="w-[100vw] md:h-[900px] lg:h-[900px] xl:h-[900px] sm:h-[3000px] xs:h-[3000px]   mt-10 flex  flex-col mx-auto">
         <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[800px] xs:h-[800px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row">
         
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mx-auto lg:mx-auto xl:mx-auto sm:ml-28 xs:ml-28 ml-2">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mx-auto lg:mx-auto xl:mx-auto sm:ml-2 xs:ml-2 ml-2">
                 <img src="candles.png" alt="" class="h-16 w-20 mx-auto mt-5 opacity-40">
                 <h2 class="font-[400] text-[40px] text-[#F18C8E] mx-auto -mt-16 z-20" style="font-family: 'Dancing Script', cursive;">new collection</h2>
                 <h1 class="font-[400] text-[50px] text-[#305F72] mx-auto sm:text-[30px] xs:text-[30px]" style="font-family: 'Ubuntu', sans-serif;">Recommended for you</h1>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mt-6 lg:mt-6 xl:mt-6 md:ml-2 lg:ml-2 xl:ml-2 sm:ml-40 xs:ml-40 " data-aos="slide-left">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mt-6 lg:mt-6 xl:mt-6 md:ml-2 lg:ml-2 xl:ml-2 sm:ml-2 xs:ml-2" data-aos="slide-left">
                 <div class="group relative">
-                    <img src="d2.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                    <img src="c8.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <a href="#" class="text-[#305F72] text-center">View More</a>
                     </div>
                 </div>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mt-6 lg:mt-6 xl:mt-6 md:ml-2 lg:ml-2 xl:ml-2  sm:ml-40 xs:ml-40 " data-aos="slide-right">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mt-6 lg:mt-6 xl:mt-6 md:ml-2 lg:ml-2 xl:ml-2  sm:ml-2 xs:ml-2 " data-aos="slide-right">
                 <div class="group relative">
-                    <img src="sec-3.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                    <img src="c34.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <a href="#" class="text-[#305F72] text-center">View More</a>
                     </div>
                 </div>
             </div>
-            <div class=" xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mx-1 lg:mx-1 xl:mx-1 sm:ml-40 xs:ml-40 mt-6 " data-aos="slide-left">
+            <div class=" xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mx-1 lg:mx-1 xl:mx-1  sm:ml-2 xs:ml-2  mt-6 " data-aos="slide-left">
                 <div class="group relative">
                     <img src="p3.jpg" alt="" class="w-[400px] h-[450px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -272,24 +327,23 @@
         </div>
         <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[1200px] xs:h-[1200px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row">
         
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 xl:ml-2 lg:ml-2 md:ml-2 sm:ml-40 xs:ml-40 lg:-mt-[74px] md:-mt-[74px] xl:-mt-[74px] xs:mt-[600px] sm:mt-[600px]" data-aos="slide-right">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-1 xl:ml-2 lg:ml-2 md:ml-2  sm:ml-2 xs:ml-2  lg:-mt-[74px] md:-mt-[74px] xl:-mt-[74px] xs:mt-[600px] sm:mt-[600px]" data-aos="slide-right">
                 <div class="group relative">
                     <img src="p4.jpg" alt="Image" class="group-hover:opacity-50 transition-opacity w-[400px] h-[450px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 ">
-                  
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                      <a href="#" class="text-[#305F72] text-center">View More</a>
+                    <a href="#" class="text-[#305F72] text-center">View More</a>
                     </div>
-                  </div>  
+                    </div>  
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mt-6 lg:mt-6 xl:mt-6 md:mx-1 lg:mx-1 xl:mx-1 sm:ml-40 xs:ml-40 " data-aos="slide-left">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mt-6 lg:mt-6 xl:mt-6 md:mx-1 lg:mx-1 xl:mx-1  sm:ml-2 xs:ml-2 " data-aos="slide-left">
                 <div class="group relative">
-                    <img src="p5.jpg" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
+                    <img src="collection3.png" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <a href="#" class="text-[#305F72] text-center">View More</a>
                     </div>
                 </div>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mt-6 lg:mt-6 xl:mt-6 md:mx-1 lg:mx-1 xl:mx-1 sm:ml-40 xs:ml-40 " data-aos="slide-right">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mt-6 lg:mt-6 xl:mt-6 md:mx-1 lg:mx-1 xl:mx-1 sm:ml-2 xs:ml-2  " data-aos="slide-right">
                 <div class="group relative">
                     <img src="a.webp" alt="" class="w-[400px] h-[350px] sm:mx-auto xs:mx-auto xs:my-2 sm:my-2 group-hover:opacity-50 transition-opacity">
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -297,7 +351,7 @@
                     </div>
                 </div>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mx-1 lg:mx-1 xl:mx-1 sm:ml-40 xs:ml-40 ">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col md:mx-1 lg:mx-1 xl:mx-1 sm:ml-2 xs:ml-2 ">
                 <img src="candles.png" alt="" class="h-16 w-20 mx-auto mt-72 opacity-40">
                 <a href="#" class="font-[400] text-[40px] text-[#F18C8E] mx-auto -mt-16 z-20 " style="font-family: 'Dancing Script', cursive;">Join us now</a>     
             </div>
@@ -305,16 +359,15 @@
     </div>
     
 
-  
-      
+
     <!--CTA section-->
     <section id="cta section-6" class="sm:w-[900px] xs:w-[900px] lg:w-auto xl:w-auto md:w-auto" style="background-image: url('CTA.jpg');" data-aos="slide-down">
         <section id="section-5" class="bg-[#307249] section-4" data-aos="slide-up">
-           <div class="container flex flex-col items-center justify-between px-2 py-1 mx-auto mt-10  md:py-0.5  md:flex-row "></div>
-       </section>
+            <div class="container flex flex-col items-center justify-between px-2 py-1 mx-auto mt-10  md:py-0.5  md:flex-row "></div>
+        </section>
         <div class="container flex flex-col items-center justify-between
-        px-6 py-24 mx-auto  mb-12 md:mb-12 md:flex-row md:space-y-0">
-      
+        px-6 py-24 mx-auto sm:ml-2 xs:ml-2 mb-12 md:mb-12 md:flex-row md:space-y-0">
+    
         <h1 class="text-4xl mb-4 font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left" style="font-family: 'Ubuntu', sans-serif;">
             Wide variety of scented candles from the world’s top candle manufacturers.
         </h1>
@@ -328,30 +381,28 @@
     </section>
 
     <div id="section-7" class=" flex  justify-between lg:h-56 xl:h-56 md:h-56  mt-16 sm:h-[800px] xs:h-[800px] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row mx-auto" >
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-8 lg:mx-1 xl:mx-1 sm:ml-52 xs:ml-52 " data-aos="slide-right">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-8 lg:mx-1 xl:mx-1 sm:ml-14 xs:ml-14" data-aos="slide-right">
                 <img src="return-box.png" alt="" class="w-[60px] h-[60px] ml-14 xs:mx-auto sm:mx-auto s-enlarge">
                 <h1  class="font-[400] text-[20px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">Easy Return</h1>
                 <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto text-[14px] my-2">Shop stress-free with our easy return policy</p>
             </div>
-            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-20 sm:ml-52 xs:ml-52" data-aos="slide-right">
+            <div class="xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-20 sm:ml-14 xs:ml-14" data-aos="slide-right">
                 <img src="medal.png" alt="" class="w-[60px] h-[60px] ml-14 xs:mx-auto sm:mx-auto s-enlarge">
                 <h1 class="font-[400] text-[20px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">Best Quality</h1>
                 <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto text-[14px] my-2">our premium selection of best quality products</p>
             </div>
-            <div class=" xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-20 sm:ml-52 xs:ml-52 "data-aos="slide-left">
+            <div class=" xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-20 sm:ml-14 xs:ml-14 "data-aos="slide-left">
                 <img src="fast.png" alt="" class="w-[60px] h-[60px] ml-14 xs:mx-auto sm:mx-auto s-enlarge">
                 <h1 class="font-[400] text-[20px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">Fast Delivery</h1>
                 <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto text-[14px] my-2">Get your order in a flash! </p>
             </div>
-            <div class=" xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-20 sm:ml-52 xs:ml-52 " data-aos="slide-left">
+            <div class=" xl:w-[38%] lg:w-[38%] md:w-[38%] flex flex-col mx-20 sm:ml-14 xs:ml-14" data-aos="slide-left">
                 <img src="support.png" alt="" class="w-[55px] h-[55px] ml-14 xs:mx-auto sm:mx-auto s-enlarge">
                 <h1 class="font-[400] text-[20px] text-[#305F72] mx-auto" style="font-family: 'Ubuntu', sans-serif;">All Day Support</h1>
                 <p style="font-family: 'Open Sans', sans-serif;" class="flex text-center text-gray-400 mx-auto text-[14px] my-2">Count on us for support around the clock</p>
             </div>
     </div>
-            
-   
-    <div id="section-8 footer-section" data-aos="fade" class="sm:w-[900px] xs:w-[900px] lg:w-auto xl:w-auto md:w-auto">
+    <div id="section-8 footer-section" data-aos="fade" class=w-[100%]">
         <div class=" flex  justify-between lg:h-96 xl:h-96 md:h-96 sm:h-[1000px] xs:h-[900px] bg-[#f0b7a423] flex-row sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row" style="position:relative; bottom:0; left:0;">
             <div class="xl:w-[40%] md:w-[40%] lg:w-[40%] sm:flex-col xs:flex-col md:flex-row lg:flex-row xl:flex-row flex-row xs:mx-auto sm:mx-auto">
                 <img src="logo.png" alt="" class="w-64 h-64  sm:w-96 sm:h-96 xs:w-96 xs:h-96  xs:ml-16 sm:ml-16">
@@ -402,11 +453,11 @@
      
         </div >
        
-        <div class="footer sm:w-[900px] xs:w-[900px] lg:w-auto xl:w-auto md:w-auto h-24 xs:h-32 sm:h-32 bg-[#f18c8e83] md:flex-row lg:flex-row xl:flex-row xs:flex-col sm:flex-col flex" style="position:relative; bottom:0; left:0;">
+        <div class="footer sm:w-[900px] xs:w-[900px] lg:w-auto xl:w-auto md:w-auto h-24 xs:h-32 sm:h-32  bg-[#f18c8e83] md:flex-row lg:flex-row xl:flex-row xs:flex-col sm:flex-col flex" style="position:relative; bottom:0; left:0;">
             
-            <p class="text-[#305F72]   text-[14px] ml-20 pt-10 xs:mx-auto sm:mx-auto"  style="font-family: 'Open Sans', sans-serif;">© 2023 LigtupAroma.  All rights reserved.</p>
-            <p class="text-[#305F72]   text-[14px] lg:mr-32  md:mr-32  xl:mr-32  md:mt-12 lg:md:mt-12 xl:md:mt-12 float-right xs:mx-auto sm:mx-auto" style="font-family: 'Open Sans', sans-serif;">Privacy</p>
-            <p class="text-[#305F72]  text-[14px] mr-4  float-right md:mt-12 lg:md:mt-12 xl:md:mt-12 xs:mx-auto sm:mx-auto" style="font-family: 'Open Sans', sans-serif;">Terms of use</p>
+            <p class="text-[#305F72]   text-[14px] ml-20 pt-10 sm:ml-14 xs:ml-14"  style="font-family: 'Open Sans', sans-serif;">© 2023 LigtupAroma.  All rights reserved.</p>
+            <p class="text-[#305F72]   text-[14px] lg:mr-32  md:mr-32  xl:mr-32  md:mt-12 lg:md:mt-12 xl:md:mt-12 float-right sm:ml-14 xs:ml-14" style="font-family: 'Open Sans', sans-serif;">Privacy</p>
+            <p class="text-[#305F72]  text-[14px] mr-4  float-right md:mt-12 lg:md:mt-12 xl:md:mt-12 sm:ml-14 xs:ml-14" style="font-family: 'Open Sans', sans-serif;">Terms of use</p>
         
         </div>
     </div>
@@ -435,6 +486,7 @@
         offset:300
     });
   </script>
+  <script src="index.js"></script>
 </body>
 </html>
 
